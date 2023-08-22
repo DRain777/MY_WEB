@@ -1,0 +1,445 @@
+@import"./reset.css";
+/* @import url('https://fonts.gogleapis.com/css2?family=Poppins:wght@400;500;600;700&display=') */
+
+
+:root {
+    --container-width: 1270px;
+    --container-padding: 55px;
+}
+
+r body {
+    font-family: 'poppins', sans-serif;
+    background-color: #f6f6f6;
+    color: #0f1f1c;
+
+
+}
+
+.none {
+    display: none !important;
+    /* вспомогательный класс чтобы скрывать элементы */
+
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+    margin-bottom: 20px;
+
+
+}
+
+.block {
+    height: 200px;
+    background-color: darkseagreen;
+}
+
+
+/* header */
+
+.header {
+
+    padding-top: 44px;
+    position: relative;
+    min-height: 885px;
+    background: linear-gradient(132.05deg, #428e5f -17.38%, #112120 78.4%), #204434;
+    color: #fff;
+    /* background-color: green; */
+}
+
+.header a {
+
+
+    color: inherit;
+    /* Наследова у родителя */
+}
+
+.header::after {
+
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 38px;
+
+
+
+    background-image: url(./../img/header/photo1692416041\ \(1\).jpeg);
+
+    /* background-size: 100%; */
+
+
+}
+
+
+.header__top {
+    margin-bottom: 86px;
+
+
+}
+
+.header__row {
+    display: flex;
+    /* justify-content: space-between; */
+
+
+
+
+
+}
+
+.header__content {
+    max-width: 570px;
+
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    display: inline-block;
+}
+
+/* header  */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 80px;
+
+    /* выравнивает элементы по центру*/
+
+}
+
+.nav_logo {
+
+    font-size: 15px;
+    font-weight: 500;
+    align-items: center;
+}
+
+/* .block {} */
+
+.nav_list {
+
+    display: flex;
+    justify-content: space-between;
+    /* gap: 35px; */
+    column-gap: 80px;
+    font-size: 15px;
+    font-weight: 500;
+    align-items: center;
+}
+
+.nav_list a {
+    position: absolute;
+}
+
+.nav_list a.active::after,
+.nav_list a:hover::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 4px;
+    background-color: blue;
+    left: 0;
+    bottom: -23px;
+    border-radius: 50px;
+
+}
+
+
+.nav_login {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    align-items: center;
+
+
+}
+
+/* logo */
+
+.logo {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+
+}
+
+/* button  */
+
+.btn_login {
+    padding: 13px 44px;
+    background-color: rebeccapurple;
+    border-radius: 50px;
+
+    font-size: 15px;
+    font-weight: 500;
+
+}
+
+.btn:hover {
+    /* при наведении курсор на Login меняет цвет*/
+
+    color: #ecf00b;
+    transition: color 0.2s ease-in;
+
+}
+
+.btn:active {
+    /* эффект прожатия кнопки*/
+    position: relative;
+    top: 1px;
+}
+
+
+
+.header_badge {
+    margin: bottom 7px;
+    display: inline-block;
+    padding: 11px 30px;
+    font-size: 18px;
+    font-weight: 500px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.25);
+    align-items: center;
+
+}
+
+
+
+.header_title {
+
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+
+
+
+.header_text {
+    margin-bottom: 68px;
+    font-size: 25px;
+    /* font-weight: 700; */
+
+    /* line-height: -3
+    0%; */
+    width: 400px;
+    color: rgb(255, 0255, 0255, 0.5);
+
+
+}
+
+
+
+.header_btn {
+    padding: 27px 48px;
+    border-radius: 27px;
+    display: inline-block;
+    font-weight: 600;
+    background: linear-gradient(129.54deg, #ecf00b15.57%, #ecf00b 95.03%);
+    font-size: 25;
+}
+
+
+
+.header_btn:hover {
+    /* при наведении курсор на Login меняет цвет*/
+
+    color: #c20bf0;
+    transition: color 0.2s ease-in;
+
+}
+
+.header_btn:active {
+    /* эффект прожатия кнопки*/
+    position: relative;
+    top: 1px;
+}
+
+
+.header_img {
+
+    width: 330px;
+    /* height: 100px; */
+    border-radius: 50px
+}
+
+.my_img {
+    border-radius: 50px;
+    mix-blend-mode: hard-light;
+}
+
+
+/* destination */
+
+
+.destinations {
+    padding: 96px 0 100px;
+
+    /* display: flex;
+    justify-content: space-between; */
+    overflow-x: hidden;
+
+}
+
+.container_right {
+
+    padding-left: calc((100% - var(--container-width)) /2 + var(--container-padding));
+    padding-right: 0 px;
+
+    display: flex;
+    justify-content: space-between;
+
+
+
+    column-gap: 50px;
+    background-color: blueviolet;
+
+    margin-top: -8%;
+  
+
+
+
+
+}
+
+
+.destinations_row {
+
+    display: flex;
+    column-gap: 50px;
+
+
+}
+
+
+
+
+
+.destinations_container {
+
+    max-width: 456px;
+    margin-left: -60px;
+    
+}
+
+
+
+.destinations_slider {
+
+    width: 1110px;
+    flex-shrink: 0;
+
+
+
+    width: 160px;
+}
+
+.destinations_title {
+    margin-bottom: 15px;
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.destinations_title span {
+    font-size: 30px;
+}
+
+
+.destinations_text {
+    margin-bottom: 60px;
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--secondary);
+    width: 300px;
+}
+
+.btn {
+
+    padding: 27px 48px;
+    border-radius: 27px;
+    display: inline-block;
+    font-weight: 600;
+    background: linear-gradient(129.54deg, #ecf00b15.57%, #ecf00b 95.03%);
+    font-size: 25;
+}
+
+.slider {
+    /* position: relative;
+    max-height: max-content;
+    display: flex;
+    gap: 20px;
+    width: 865px; */
+
+
+
+    position: relative;
+    height: 456px;
+}
+
+.slider_item {
+    width: 305px;
+    height: 402px;
+    object-fit: cover;
+    border-radius: 35px;
+    transition: 0.2s ease-in;
+}
+
+
+
+.slider .center .slider_item {
+    width: 380px;
+    height: 456px;
+
+}
+
+
+/* ./slider_item.center {} */
+
+.owl-carousel {
+    /* max-width: max-content;
+    */
+
+
+}
+
+
+
+
+/* ///////// */
+
+
+.slider_btn {
+    position: absolute;
+    top: 175%;
+    transform: translateY(-50%);
+    z-index: 9;
+
+    display: block;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+
+    /* background: linear-gradient(129.54deg, #ff7b4e 15.57%, #ff584e 95.
+    03%), #8b8b8b; */
+
+    background-color: rgb(243, 4, 4);
+}
+
+.slider_btn--prev {
+    left: 480px;
+    padding-left: 26px;
+    justify-content: flex-start;
+}
+
+.slider_btn--next {
+    right: -27px;
+    padding-right: 26px;
+    justify-content: flex-end;
+}
